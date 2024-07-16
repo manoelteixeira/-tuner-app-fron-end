@@ -1,0 +1,50 @@
+// src/Pages/home/home.scss
+@import "../../styles/colors";
+
+.home {
+  width: 100vw;
+  height: 90%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-shadow: 4px 2px $accent_color;
+  }
+
+  &__songs {
+    width: 700px;
+    height: 600px;
+    overflow-y: scroll;
+    padding: 40px;
+    border: 4px solid $seconday_color;
+    border-radius: 20px;
+  }
+
+  &__song {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px 20px;
+    font-style: italic;
+
+    &-item {
+      font-size: 18px;
+      span {
+        font-style: o;
+        font-weight: bolder;
+      }
+    }
+
+    &:hover {
+      color: $seconday_color;
+      border-bottom: 2px dotted $seconday_color;
+    }
+  }
+}

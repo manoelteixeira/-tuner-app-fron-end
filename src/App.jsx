@@ -1,9 +1,23 @@
 // src/App.jsx
+import { Routes, Route, Navigate } from "react-router-dom";
+import Navbar from "./Components/navbar/Navbar";
+import Home from "./Pages/home/Home";
+import NewSong from "./Pages/newSong/NewSong";
+import Show from "./Pages/show/Show";
+
+import "./styles/App.scss";
+
 function App() {
   return (
-    <>
-      <h1>Tuner App</h1>
-    </>
+    <div className="app">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/songs" replace />} />
+        <Route path="/songs" element={<Home />} />
+        <Route path="/songs/new" element={<NewSong />} />
+        <Route path="/songs/:id" element={<Show />} />
+      </Routes>
+    </div>
   );
 }
 
