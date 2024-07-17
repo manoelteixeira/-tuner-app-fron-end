@@ -4,6 +4,7 @@ import Navbar from "./Components/navbar/Navbar";
 import Home from "./Pages/home/Home";
 import NewSong from "./Pages/newSong/NewSong";
 import Show from "./Pages/show/Show";
+import EditSong from "./Pages/edit/EditSong";
 
 import "./styles/App.scss";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/songs" element={<Home />} />
         <Route path="/songs/new" element={<NewSong />} />
         <Route path="/songs/:id" element={<Show />} />
+        <Route path="/songs/:id/edit" element={<EditSong />} />
       </Routes>
     </div>
   );

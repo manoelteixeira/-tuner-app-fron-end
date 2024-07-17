@@ -1,2 +1,105 @@
 // src/Pages/show/show.scss
-// @import "../../styles/colors";
+@import "../../styles/colors";
+
+.show {
+  width: 100vw;
+  height: 90%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+
+  &__loading {
+    padding-top: 10%;
+    font-size: 38px;
+    letter-spacing: 0.2em;
+    text-shadow: 5px 5px $accent_color;
+  }
+
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-shadow: 4px 2px $accent_color;
+  }
+
+  &__details {
+    padding: 40px;
+    border: 2px solid $seconday_color;
+    border-radius: 10px;
+    font-size: 18px;
+
+    &-item {
+      padding: 10px;
+      span {
+        letter-spacing: 0.2em;
+        padding-left: 20px;
+        color: $seconday_color;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__controls {
+    width: 500px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 0.1em;
+
+    a {
+      text-decoration: none;
+    }
+
+    &-back {
+      width: 100px;
+      padding: 10px;
+      text-align: center;
+      border: 2px solid $seconday_color;
+      border-radius: 1.5em;
+      color: $seconday_color;
+      cursor: pointer;
+      font-weight: bolder;
+      font-size: 18px;
+      &:hover {
+        color: $primary_color;
+        border-color: $primary_color;
+      }
+    }
+
+    &-edit {
+      width: 100px;
+      padding: 10px;
+      text-align: center;
+      border: 2px solid $seconday_color;
+      border-radius: 1.5em;
+      color: $seconday_color;
+      cursor: pointer;
+      font-weight: bolder;
+      font-size: 18px;
+
+      &:hover {
+        color: $bg_color;
+        background-color: $seconday_color;
+      }
+    }
+
+    &-delete {
+      width: 100px;
+      padding: 10px;
+      text-align: center;
+      border: 2px solid $seconday_color;
+      border-radius: 1.5em;
+      color: $seconday_color;
+      cursor: pointer;
+      font-weight: bolder;
+      font-size: 18px;
+      &:hover {
+        color: $warning_color;
+        border-color: $warning_color;
+      }
+    }
+  }
+}

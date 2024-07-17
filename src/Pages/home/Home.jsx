@@ -17,7 +17,7 @@ export default function Home() {
   if (!songs) {
     return (
       <div className="home">
-        <h1 className="home__loading">Loading</h1>
+        <h1 className="home__loading">Loading...</h1>
       </div>
     );
   } else {
@@ -29,16 +29,20 @@ export default function Home() {
             return (
               <div
                 key={song.id}
-                className="home__song"
+                className={"home__song"}
                 onClick={() => {
                   navigate(`/songs/${song.id}`);
                 }}
               >
-                <div className="home__song-item">
+                <div
+                  className={`home__song-item ${
+                    song.is_favorite ? "favorite" : ""
+                  }`}
+                >
                   <span>{song.name}</span> By {song.artist}
                 </div>
                 <div className="home__song-time">
-                  {(song.time / 60).toPrecision(2)}s
+                  {(song.time / 60).toPrecision(2)} min
                 </div>
               </div>
             );

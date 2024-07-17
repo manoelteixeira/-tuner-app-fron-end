@@ -9,6 +9,13 @@
   justify-items: center;
   gap: 20px;
 
+  &__loading {
+    padding-top: 10%;
+    font-size: 38px;
+    letter-spacing: 0.2em;
+    text-shadow: 5px 5px $accent_color;
+  }
+
   &__title {
     font-size: 36px;
     text-transform: uppercase;
@@ -36,15 +43,26 @@
 
     &-item {
       font-size: 18px;
+      color: $accent_color;
       span {
+        color: $primary_color;
         font-style: o;
         font-weight: bolder;
       }
     }
 
-    &:hover {
+    &-time {
       color: $seconday_color;
+    }
+
+    &:hover {
       border-bottom: 2px dotted $seconday_color;
     }
+  }
+}
+
+.favorite {
+  span {
+    color: $seconday_color !important;
   }
 }
