@@ -26,12 +26,12 @@
   }
 
   &__songs {
-    width: 700px;
+    width: 80vw;
     height: 600px;
     overflow-y: scroll;
     padding: 40px;
     border: 4px solid $seconday_color;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   &__song {

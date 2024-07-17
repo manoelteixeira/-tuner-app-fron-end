@@ -11,7 +11,10 @@ export default function Home() {
   useEffect(() => {
     fetch(`${API}/songs/`)
       .then((res) => res.json())
-      .then((res) => setSongs(res))
+      .then((res) => {
+        console.log(res);
+        setSongs(res);
+      })
       .catch((err) => console.error(err));
   }, []);
   if (!songs) {
