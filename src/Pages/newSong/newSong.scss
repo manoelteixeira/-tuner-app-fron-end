@@ -1,2 +1,75 @@
 // src/Pages/newSong/newSong.scss
-// @import "../../styles/colors";
+@import "../../styles/colors";
+
+.new-song {
+  width: 100vw;
+  height: 90%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+
+  &__loading {
+    padding-top: 10%;
+    font-size: 38px;
+    letter-spacing: 0.2em;
+    text-shadow: 5px 5px $accent_color;
+  }
+
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-shadow: 4px 2px $accent_color;
+  }
+  &__form {
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    &-field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px 10px 10px;
+
+      label {
+        font-size: 18px;
+        font-weight: bold;
+        padding-right: 10px;
+      }
+
+      input {
+        width: 400px;
+        padding: 5px;
+        font-size: 18px;
+        border: none;
+        color: $seconday_color;
+        background-color: $bg_color;
+        border-bottom: 2px solid $seconday_color;
+      }
+    }
+    &-check {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    &-submit {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bolder;
+      color: $seconday_color;
+      background-color: $bg_color;
+      border: 3px solid $seconday_color;
+      border-radius: 1.5em;
+
+      &:hover {
+        color: $bg_color;
+        background-color: $seconday_color;
+      }
+    }
+  }
+}
