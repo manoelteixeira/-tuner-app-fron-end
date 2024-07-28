@@ -1,5 +1,5 @@
 # Tuner App Front End
-This is a fron-end react application for a simple [bugeting app](https://github.com/manoelteixeira/tuner-app-back-end).
+This is a fron-end react application for a simple [Music Playlist App](https://github.com/manoelteixeira/tuner-app-back-end).
 
 ## Instalation And Setup
 1. **Fork** and **Clone** this repository
